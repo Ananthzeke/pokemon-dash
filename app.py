@@ -2,6 +2,7 @@ from dash import Dash
 from index import layout, register_callbacks
 import os
 
+
 app = Dash(__name__, suppress_callback_exceptions=True)
 app.layout = layout
 
