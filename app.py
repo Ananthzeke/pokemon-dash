@@ -9,5 +9,5 @@ app.layout = layout
 register_callbacks(app)
 
 if __name__ == '__main__':
-    app.run_server(debug=False, host='0.0.0.0', port=7860)
+    app.run_server(debug=False, host=os.environ.get("HOST") or "0.0.0.0", port=os.environ.get("PORT") or 8080)
 
